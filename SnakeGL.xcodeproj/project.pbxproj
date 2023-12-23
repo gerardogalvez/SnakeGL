@@ -1,0 +1,69 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXGroup section */
+		C0431D592B36C0C8008D3C7F = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C0431D5A2B36C0C8008D3C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1510;
+			};
+			buildConfigurationList = C0431D5D2B36C0C8008D3C7F /* Build configuration list for PBXProject "SnakeGL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0431D592B36C0C8008D3C7F;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C0431D5E2B36C0C8008D3C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C0431D5F2B36C0C8008D3C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0431D5D2B36C0C8008D3C7F /* Build configuration list for PBXProject "SnakeGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0431D5E2B36C0C8008D3C7F /* Debug */,
+				C0431D5F2B36C0C8008D3C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0431D5A2B36C0C8008D3C7F /* Project object */;
+}
