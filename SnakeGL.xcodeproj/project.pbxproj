@@ -6,14 +6,113 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C0431D6A2B36C19A008D3C7F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0431D692B36C19A008D3C7F /* main.cpp */; };
+		C0431D702B36C27F008D3C7F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0431D6F2B36C27E008D3C7F /* OpenGL.framework */; };
+		C0431D722B36C294008D3C7F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0431D712B36C294008D3C7F /* GLUT.framework */; };
+		C055E1732B3919D00025A346 /* Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C055E1712B3919D00025A346 /* Position.cpp */; };
+		C055E17F2B3B38C20025A346 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C055E17D2B3B38C20025A346 /* Game.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0431D642B36C19A008D3C7F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C0431D662B36C19A008D3C7F /* SnakeGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SnakeGL; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0431D692B36C19A008D3C7F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C0431D6F2B36C27E008D3C7F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C0431D712B36C294008D3C7F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C055E1712B3919D00025A346 /* Position.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Position.cpp; sourceTree = "<group>"; };
+		C055E1722B3919D00025A346 /* Position.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Position.hpp; sourceTree = "<group>"; };
+		C055E1782B3B363E0025A346 /* Direction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Direction.hpp; sourceTree = "<group>"; };
+		C055E17B2B3B36870025A346 /* CellStatus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CellStatus.hpp; sourceTree = "<group>"; };
+		C055E17D2B3B38C20025A346 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		C055E17E2B3B38C20025A346 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0431D632B36C19A008D3C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0431D722B36C294008D3C7F /* GLUT.framework in Frameworks */,
+				C0431D702B36C27F008D3C7F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		C0431D592B36C0C8008D3C7F = {
 			isa = PBXGroup;
 			children = (
+				C0431D682B36C19A008D3C7F /* SnakeGL */,
+				C0431D672B36C19A008D3C7F /* Products */,
+				C0431D6E2B36C27E008D3C7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
+		C0431D672B36C19A008D3C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0431D662B36C19A008D3C7F /* SnakeGL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0431D682B36C19A008D3C7F /* SnakeGL */ = {
+			isa = PBXGroup;
+			children = (
+				C0431D692B36C19A008D3C7F /* main.cpp */,
+				C055E17D2B3B38C20025A346 /* Game.cpp */,
+				C055E17E2B3B38C20025A346 /* Game.hpp */,
+				C055E1782B3B363E0025A346 /* Direction.hpp */,
+				C055E17B2B3B36870025A346 /* CellStatus.hpp */,
+				C055E1712B3919D00025A346 /* Position.cpp */,
+				C055E1722B3919D00025A346 /* Position.hpp */,
+			);
+			path = SnakeGL;
+			sourceTree = "<group>";
+		};
+		C0431D6E2B36C27E008D3C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0431D712B36C294008D3C7F /* GLUT.framework */,
+				C0431D6F2B36C27E008D3C7F /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0431D652B36C19A008D3C7F /* SnakeGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0431D6B2B36C19A008D3C7F /* Build configuration list for PBXNativeTarget "SnakeGL" */;
+			buildPhases = (
+				C0431D622B36C19A008D3C7F /* Sources */,
+				C0431D632B36C19A008D3C7F /* Frameworks */,
+				C0431D642B36C19A008D3C7F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnakeGL;
+			productName = SnakeGL;
+			productReference = C0431D662B36C19A008D3C7F /* SnakeGL */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C0431D5A2B36C0C8008D3C7F /* Project object */ = {
@@ -21,6 +120,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					C0431D652B36C19A008D3C7F = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
 			};
 			buildConfigurationList = C0431D5D2B36C0C8008D3C7F /* Build configuration list for PBXProject "SnakeGL" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -31,12 +135,27 @@
 				Base,
 			);
 			mainGroup = C0431D592B36C0C8008D3C7F;
+			productRefGroup = C0431D672B36C19A008D3C7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C0431D652B36C19A008D3C7F /* SnakeGL */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0431D622B36C19A008D3C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C055E17F2B3B38C20025A346 /* Game.cpp in Sources */,
+				C055E1732B3919D00025A346 /* Position.cpp in Sources */,
+				C0431D6A2B36C19A008D3C7F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		C0431D5E2B36C0C8008D3C7F /* Debug */ = {
@@ -51,6 +170,129 @@
 			};
 			name = Release;
 		};
+		C0431D6C2B36C19A008D3C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C0431D6D2B36C19A008D3C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -59,6 +301,15 @@
 			buildConfigurations = (
 				C0431D5E2B36C0C8008D3C7F /* Debug */,
 				C0431D5F2B36C0C8008D3C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0431D6B2B36C19A008D3C7F /* Build configuration list for PBXNativeTarget "SnakeGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0431D6C2B36C19A008D3C7F /* Debug */,
+				C0431D6D2B36C19A008D3C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
